@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Planet Home</title>
+<!--=================================
+Meta tags
+=================================-->
+<script src="https://use.fontawesome.com/1c58ef1c58.js"></script>
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" />
+<!--=================================
+Style Sheets
+=================================-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/flags.css">
+<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body class="home">
+
+<!--========================================
+Quick view
+===========================================-->
+<div class="quickViewWrap xv-hide">
+    <div class="quickView">
+        <ul class="quickActions clearfix">
+            <li title="Profile">
+                <a data-wide="true" href="#qvt-user">
+                    <img src="./assets/img/avatar83.png" alt="">
+                    <span>Login</span>
+                </a>
+            </li>
+            <li title="shopping cart">
+                <span class="cartItems-count qvCount">1</span>
+                <a data-wide="false" href="#qvt-cart">
+                    <img src="./assets/img/bag45.png" alt="">
+                    <span>Your Cart</span>
+                </a>
+            </li>
+            <li>
+                <!--<span class="compare-count qvCount">03</span>-->
+                <a data-wide="false" href="#qvt-wishlist" title="Wish List">
+                    <img src="./assets/img/heart365.png" alt="">
+                    <span>Your Wishlist</span>
+                </a>
+            </li>
+            <li>
+                <!--<span class="compare-count qvCount">03</span>-->
+                <a data-wide="false" href="#qvt-compare" title="Compare List">
+                    <img src="./assets/img/line.png" alt="">
+                    <span>Compare List</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="quickviewTabs">
+
+            <div id="qvt-user" class="qv-panel">
+                <a href="#" class="closeQPanel"><i class="fa fa-close"></i></a>
+                <form method="post" action="login" id="login">
+                    <p class="text-center"> <img src="assets/img/basic/padlock106.png" alt=""></p>
+                    <input type="text" name="username" placeholder="Username" id="username">
+                    <input type="password" name="password" placeholder="Password" id="password">
+                    <a href="#" class="lost">Lost your password?</a><br><br>
+                    <input type="submit" name="submit" value="Login" class="btn-blue btn">
+                </form>
+            </div>
+
+            <div id="qvt-cart" class="qv-panel">
+                <a href="#" class="closeQPanel"><i class="fa fa-close"></i></a>
+                <ul class="quickShoping-list">
+                    <li>
+                        <a data-pid="xyz101" data-qty="2" class="qv-remove-prod fa fa-remove" href="#"></a>
+                        <a href="#"><img src="assets/img/news-img-2.png" alt=""></a>
+                        <span>x2</span>
+                    </li>
+                </ul>
+
+                <a href="cart1.html" class="btn btn-blue triggerCart" title="check out">
+                    <i class="fa fa-cart-arrow-down"></i>
+                    <span>Visit Checkout Page</span>
+                </a>
+            </div>
+
+            <div id="qvt-wishlist" class="qv-panel">
+                <a href="#" class="closeQPanel"><i class="fa fa-close"></i></a>
+                <ul class="quickShoping-list empty"></ul>
+                <a href="#" class="btn btn-blue triggerCart" title="View Wishlist Page">
+                    <i class="fa fa-heart"></i>
+                    <span>Visit Checkout Page</span>
+                </a>
+            </div>
+
+            <div id="qvt-compare" class="qv-panel">
+                <a href="#" class="closeQPanel"><i class="fa fa-close"></i></a>
+                <ul class="quickShoping-list empty"></ul>
+                <a href="#" class="btn btn-blue triggerCompare" title="Compare Items">
+                    <i class="fa fa-exchange"></i>
+                    <span>Visit Checkout Page</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="qv-alert"><img src="./assets/img/basic/shopping102.png" alt=""> Product Added Successfully</div>
+<!--========================================
+Header
+===========================================-->
+<div class="preHeader-promotions">
+    <a href="#"><img src="assets/img/promo-banner.png" alt=""></a>
+    <a href="#" class="closePromotions"></a>
+</div>
+<header class="doc-header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                </div>
+                <div class="col-xs-12 col-md-5">
+                    <ul class="top-nav text-right">
+                        <li><a href="#"><i class="fa fa-user"></i>Login</a></li>
+                        <li><a href="#"><i class="fa fa-lock"></i>Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--top header-->
+    <div class="header-bottom">
+        <div class="container">
+            <a class="logo" id="produk" href="index1.html">
+                <img src="./assets/img/logo.png" alt=""/>
+            </a>
+           <nav>
+                <a class="nav-triger" href="#">
+                    <img src="assets/img/basic/menu55.png" alt="">
+                </a>
+                <ul class="main_menu">
+                    <li><a href="#">Shopping Now</a></li>
+                </ul>
+                <a href="#" class="openCart"></a>
+                <div class="table-responsive cart-calculations  text-center">
+                  <table class="table">
+                      <tbody class="shadow-around">
+                        <tr class="table-body">
+                        <td><figure><img src="./assets/img/cart-img-1.png" alt=""/></figure></td>
+                        <td>
+                            <div class="cart-wrappper text-left">
+                                <h6>Sony Powershot G2530</h6>
+                                <p><span>Availability</span>: Available in Stock</p>
+                                <p><span>Product Code</span>: CwT4a</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="quantity-control">
+                                <span class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-plus"></i></span>
+                                <input type="text" value="2" data-min="1" data-minalert="Minimum limit reached" data-max="10" data-maxalert="Maximum limit reached" data-invalid="Enter valid quantity">
+                                <span class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-minus"></i></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="cart-content">Unit Price:</span>
+                            <span class="cart-price">$250</span>
+                        </td>
+                        <td>
+                            <span class="cart-content">Sub Price:</span>
+                            <span class="cart-price">$500</span>
+                        </td>
+                        <td>
+                            <a class="cart-action" href="#"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                      </tr>
+                        <tr class="table-body">
+                        <td><figure><img src="assets/img/cart-img-2.png" alt=""/></figure></td>
+                        <td>
+                            <div class="cart-wrappper text-left">
+                                <h6>Macbook 2015</h6>
+                                <p><span>Availability</span>: Available in Stock</p>
+                                <p><span>Product Code</span>: CwT4a</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="quantity-control">
+                                <span class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-plus"></i></span>
+                                <input type="text" value="2" data-min="1" data-minalert="Minimum limit reached" data-max="5" data-maxalert="Maximum limit reached" data-invalid="Enter valid quantity">
+                                <span class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-minus"></i></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="cart-content">Unit Price:</span>
+                            <span class="cart-price">$1500</span>
+                        </td>
+                        <td>
+                            <span class="cart-content">Sub Price:</span>
+                            <span class="cart-price">$1500</span>
+                        </td>
+                        <td>
+                            <a class="cart-action" href="#"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                        </tr>
+                        <tr class="table-body style">
+                            <td></td>
+                            <td>
+                                <a href="cart1.html" class="btn-cart btn-rectangle">View Cart</a>
+                                <a href="checkout1.html" class="btn-cart btn-rectangle">Checkout</a>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="style">TOTAL:<span class="colpink">$2031</span></td>
+                            <td></td>
+                        </tr>
+                      </tbody>
+                  </table>
+               </div>
+            </nav>
+        </div>
+    </div><!--header Bottom-->
+</header><!--document Header-->
+<!--========================================
+Search
+===========================================-->
+
+<div class="social-search style2 style-wide">
+    <div class="container">
+            <div class="social">
+                <span>Hakira Brother's Shops<br>CS: (021) 5992 - 6969</span>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul><!--ul-->
+            </div><!--social-->
+            <form class="search-form">
+                <div class="custome-select">
+                    <b class="fa fa-caret-down"></b>
+                    <span>Select a Category</span>
+                    <select class="search-cate notranslate" id="search-dropdown-box">
+                       <option value="">All Categories</option>
+                       <option value="">Handphone</option>
+                       <option value="">Computer &amp; Tablet</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="I am searching for...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form><!--search-form-->
+    </div><!--container-->
+</div><!--social-search-->
+<div class="clearfix"></div>
+
+<!--=======Page Content Area=========-->
+<main id="pageContentArea">
+<!--========================================
+Slider Area
+===========================================-->
+
+    <div class="xv-slider-wrap">
+            <div class="owl-carousel slider_controls1"  data-dots=true data-slides="1" data-slides-md="1" data-slides-sm="1" data-margin="0" data-loop="true"  data-prev="fa fa-angle-left" data-next="fa fa-angle-right" data-nav="false">
+                <div class="xv-slide" style="background-image:url(./assets/img/kelas.png);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="hidden-xs hidden-sm col-md-6">
+                                <img src="assets/img/home1-slider1.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="xv-slider-content clearfix color-white">
+                                    <h1>Macbook Pro Retina</h1>
+                                    <p>When we designed MacBook Pro with Retina display, we started with a blank slate. That gave us the freedom to imagine something radical, something entirely different. A notebook so thin, so light, and so powerful it’s like
+                nothing you’ve ever seen before.</p>
+                                    <a href="#" class="btn btn-grey btn-price">From $1499</a>
+                                    <a href="#" class="btn btn-grey">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xv-slide" style="background-image:url(assets/img/kelas1.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="hidden-xs hidden-sm col-md-6">
+                                <img src="./assets/img/home1-slider2.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="xv-slider-content clearfix color-white">
+                                    <h1>Macbook Pro Retina</h1>
+                                    <p>When we designed MacBook Pro with Retina display, we started with a blank slate. That gave us the freedom to imagine something radical, something entirely different. A notebook so thin, so light, and so powerful it’s like
+                nothing you’ve ever seen before.</p>
+                                    <a href="#" class="btn btn-grey btn-price">From $1499</a>
+                                    <a href="#" class="btn btn-grey">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xv-slide" style="background-image:url(assets/img/kelas2.png);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="hidden-xs hidden-sm col-md-6">
+                                <img src="./assets/img/home1-slider3.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="xv-slider-content clearfix color-white">
+                                    <h1>Macbook Pro Retina</h1>
+                                    <p>When we designed MacBook Pro with Retina display, we started with a blank slate. That gave us the freedom to imagine something radical, something entirely different. A notebook so thin, so light, and so powerful it’s like
+                nothing you’ve ever seen before.</p>
+                                    <a href="#" class="btn btn-grey btn-price">From $1499</a>
+                                    <a href="#" class="btn btn-grey">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div><!--slider Wrap-->
+<!--=================================
+new items
+=================================-->
+
+    <div class="container">
+        <div class="product-overview pt-25 pb-45">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 hidden-xs">
+                    <nav class="secondary-nav">
+                        <ul>
+                            <li><a href="#"><span class="p-count">99</span>Smart Phones</a></li>
+                            <li><a href="#"><span class="p-count">99</span>Tablets</a></li>
+                            <li><a href="#"><span class="p-count">99</span>Camera</a></li>
+                            <li><a href="#"><span class="p-count">99</span>Headphones</a></li>
+                        </ul>
+                    </nav><!--secondary nav-->
+                </div>
+
+                <div class="col-xs-12 col-sm-9">
+                    <section class="new-product">
+                        <header class="sec-heading text-center">
+                            <div class="category-wrap">
+                                <span class="categorise"><i class="fa fa-bars"></i>All Categories<i class="fa style fa-caret-down"></i></span>
+                                <ul class="cat-dropDown">
+                                    <li><a href="#">Tablets</a></li>
+                                    <li><a href="#">Computers</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                </ul>
+                            </div>
+                            <h2><span>New</span></h2>
+                            <span>Update 31-12-2017</span>
+                        </header><!--header-->
+                        <div class="xv-product-slides mt-25 mb-25">
+                            <div class="owl-carousel slider_controls1 products" data-thumbnail="figure .xv-superimage"  data-product=".xv-product"  data-dots="false" data-prev="fa fa-angle-left" data-next="fa fa-angle-right" data-slides="3" data-slides-md="2" data-slides-sm="1" data-margin="24" data-loop="true" data-nav="true">
+                                <div data-pid="xyz100" data-name="Smartphone Apple iPhone 5 64GB" data-category="mobiles" data-price="250" class="xv-product style shadow-around">
+                                    <figure>
+                                        <a href="#"><img class="xv-superimage" src="assets/img/news-img-1.png" alt=""/></a>
+                                        <figcaption>
+                                            <ul>
+                                                <li><a data-qv-tab="#qvt-wishlist"  class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a data-qv-tab="#qvt-compare" class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-exchange"></i></a></li>
+                                                <li><a class="btn-cart btn-square btn-blue" href="#"><i class="fa fa-expand"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="xv-product-content">
+                                        <h3><a href="detail1.html">Smartphone Apple iPhone 5 64GB</a></h3>
+                                        <ul class="color-opt">
+                                            <li><a href="#">White</a></li>
+                                            <li><a href="#">Black</a></li>
+                                            <li><a href="#">Gold</a></li>
+                                        </ul>
+
+                                        <div class="xv-rating stars-5"></div>
+                                        <span class="xv-price">$250</span>
+                                        <a data-qv-tab="#qvt-cart" href="#" class="product-buy flytoQuickView">Buy</a>
+                                    </div>
+                                </div>
+
+                                <div data-pid="xyz101" data-name="Game Console Play Station 4" data-category="Handphone" data-price="100" class="xv-product style shadow-around">
+                                    <figure>
+                                        <a href="#"><img class="xv-superimage" src="assets/img/news-img-2.png" alt=""/></a>
+                                        <figcaption>
+                                            <ul>
+                                                <li><a data-qv-tab="#qvt-wishlist"  class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a data-qv-tab="#qvt-compare" class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-exchange"></i></a></li>
+                                                <li><a class="btn-cart btn-square btn-blue" href="#"><i class="fa fa-expand"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="xv-product-content">
+                                        <h3><a href="detail1.html">Game Console Play Station 4 (PS4)</a></h3>
+                                        <ul class="color-opt">
+                                            <li><a href="#">White</a></li>
+                                            <li><a href="#">Black</a></li>
+                                            <li><a href="#">Gold</a></li>
+                                        </ul>
+                                        <div class="xv-rating stars-3"></div>
+                                        <span class="xv-price">$100</span>
+                                        <a data-qv-tab="#qvt-cart" href="#" class="product-buy flytoQuickView">Buy</a>
+                                    </div>
+                                </div>
+
+                                <div data-pid="xyz102" data-name="Camera Cannon E9000" data-category="Camera" data-price="130" class="xv-product style shadow-around">
+                                    <figure>
+                                        <a href="#"><img class="xv-superimage" src="assets/img/news-img-3.png" alt=""/></a>
+                                        <figcaption>
+                                            <ul>
+                                                <li><a data-qv-tab="#qvt-wishlist"  class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a data-qv-tab="#qvt-compare" class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-exchange"></i></a></li>
+                                                <li><a class="btn-cart btn-square btn-blue" href="#"><i class="fa fa-expand"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="xv-product-content">
+                                        <h3><a href="detail1.html">Smartphone Apple iPhone 5 64GB</a></h3>
+                                        <ul class="color-opt">
+                                            <li><a href="#">White</a></li>
+                                            <li><a href="#">Black</a></li>
+                                            <li><a href="#">Gold</a></li>
+                                        </ul>
+                                        <div class="xv-rating stars-5"></div>
+                                        <span class="xv-price">$250</span>
+                                        <a data-qv-tab="#qvt-cart" href="#" class="product-buy flytoQuickView">Buy</a>
+                                    </div>
+                                </div>
+
+                                <div data-pid="xyz103" data-name="Smartphone Apple iPhone 5 64GB" data-category="gaming" data-price="250" class="xv-product style shadow-around">
+                                    <figure>
+                                        <a href="#"><img class="xv-superimage" src="assets/img/news-img-2.png" alt=""/></a>
+                                        <figcaption>
+                                            <ul>
+                                                <li><a data-qv-tab="#qvt-wishlist"  class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a data-qv-tab="#qvt-compare" class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-exchange"></i></a></li>
+                                                <li><a class="btn-cart btn-square btn-blue" href="#"><i class="fa fa-expand"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="xv-product-content">
+                                        <h3><a href="detail1.html">Smartphone Apple iPhone 5 64GB</a></h3>
+                                        <ul class="color-opt">
+                                            <li><a href="#">White</a></li>
+                                            <li><a href="#">Black</a></li>
+                                            <li><a href="#">Gold</a></li>
+                                        </ul>
+                                        <div class="xv-rating stars-5"></div>
+                                        <span class="xv-price">$250</span>
+                                        <a data-qv-tab="#qvt-cart" href="#" class="product-buy flytoQuickView">Buy</a>
+                                    </div>
+                                </div>
+
+                                <div data-pid="xyz104" data-name="Smartphone Apple iPhone 5 64GB" data-category="tv" data-price="100" class="xv-product style shadow-around">
+                                    <figure>
+                                        <a href="#"><img class="xv-superimage" src="./assets/img/news-img-3.png" alt=""/></a>
+                                        <figcaption>
+                                            <ul>
+                                                <li><a data-qv-tab="#qvt-wishlist"  class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a data-qv-tab="#qvt-compare" class="btn-cart flytoQuickView btn-square btn-blue" href="#"><i class="fa fa-exchange"></i></a></li>
+                                                <li><a class="btn-cart btn-square btn-blue" href="#"><i class="fa fa-expand"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="xv-product-content">
+                                        <h3><a href="detail1.html">Smartphone Apple iPhone 5 64GB</a></h3>
+                                        <ul class="color-opt">
+                                            <li><a href="#">White</a></li>
+                                            <li><a href="#">Black</a></li>
+                                            <li><a href="#">Gold</a></li>
+                                        </ul>
+                                        <div class="xv-rating stars-5"></div>
+                                        <span class="xv-price">$250</span>
+                                        <a data-qv-tab="#qvt-cart" href="#" class="product-buy flytoQuickView">Buy</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </section>
+                </div><!--co-->
+            </div><!--row-->
+        </div><!--product-overview -->
+    </div><!--container-->
+
+<!--========================================
+Footer
+===========================================-->
+
+<footer class="doc-footer footer-dark">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="contact">
+                    <a class="ft-logo pb-20" href="#"><img src="assets/img/footer-logo-dark.png" alt=""></a>
+                        <ul class="no-preIcon customeIconList pt-30">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:(+800)5146-9000">(+800)5146-9000</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:hieupv@outlook.com">hieupv@outlook.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                               85 Bechole Road - Victory - New York
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                85 Giang Vo str - Ba Dinh - Hanoi
+                            </li>
+                        </ul>
+                    </div><!--content-->
+                </div><!--column-3-->
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="no-mar">Information</h4>
+                    <ul class="mt-25">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy & Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Manufactures</a></li>
+                    </ul>
+                </div><!--column-3-->
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="no-mar">Extras</h4>
+                    <ul class="mt-25">
+                        <li><a href="#">Order & Returns</a></li>
+                        <li><a href="#">Search Terms</a></li>
+                        <li><a href="#">Advance Search</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Group Sales</a></li>
+                    </ul>
+                </div><!--column-3-->
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="no-mar">My Accounts</h4>
+                    <ul class="mt-25">
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                </div><!--column-3-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--footer-content-->
+    <div class="copy-rights color-white">
+        <div class="container">
+            <div class="inner">
+               <div class="row">
+                   <div class="col-xs-12 col-md-6 col-sm-6 col-xs-12">
+                       <span>Credit By : Hakira Corporation</span>
+                   </div><!--column-6-->
+                   <div class="col-xs-12 col-md-6 col-sm-6 col-xs-12">
+                        <ul class="clearfix">
+                            <li><img src="./assets/img/apple.png" alt=""></li>
+                            <li><img src="./assets/img/visa.png" alt=""></li>
+                            <li><img src="./assets/img/paypal.png" alt=""></li>
+                            <li><img src="./assets/img/master-card.png" alt=""></li>
+                        </ul>
+                   </div><!--column-6-->
+                </div><!--row-->
+            </div><!--inner-->
+        </div><!--container-->
+    </div><!--copy-rights-->
+</footer><!--doc-footer-->
+
+<!--=================================
+Script Source
+=================================-->
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/ajaxify.min.js"></script>
+<script src="./assets/js/jquery.easing-1.3.pack.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/jquery.waitforimages.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/masonry.pkgd.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
